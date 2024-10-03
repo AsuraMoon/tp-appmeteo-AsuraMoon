@@ -1,0 +1,117 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    height: 100vh;
+}
+
+#title {
+    background-color: #F1F1F1;
+    padding: 2em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+}
+
+.city {
+    position: relative;
+}
+.card {
+    background: linear-gradient(90deg, #F1F1F1 0%, #F9F9F9 100%);
+    border-radius: 10px;
+    padding: 2rem 3em;
+}
+
+.card h3 {
+    padding-bottom: 25px;
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    color: rgb(63, 63, 63);
+}
+
+#country {
+    position: absolute;
+    top: 10px;
+    right: -2.3em;
+    background-color: #e07108;
+    color: #F1F1F1;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#degrees {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#metric {
+    position: relative;
+    bottom: 26px;
+    left: 5px;
+    font-size: 20px;
+
+}
+
+#desc, #icon {
+    padding-top: 10px;
+}
+
+#desc {
+    color: #635a5a;
+    text-transform: uppercase;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em;
+    margin-top: 5em;
+}
+
+form label {
+    font-size: 2em;
+    color: #F1F1F1;
+}
+
+
+label, input[type="text"], button {
+    padding: 0.5em;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button{
+    margin-top: 0.5em;
+    width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+button:hover{
+color: #F1F1F1;
+background-color: #635a5a;
+}
